@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+
+<h1>Calcular el promedio de las edades de una familia</h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var miembros = parseInt(prompt("¿Cuantos miembros tiene su familia?"));
+    var cont=1
+    var totalEdades=0;
+    while(cont <= miembros){
+        
+        edad = parseInt(prompt("Ingrese la edad del familiar"));
+        totalEdades= totalEdades+edad;
+        cont++;
+    }
+    promedioEdades= totalEdades/miembros;
+    imprimir("El promedio de edades de la familia es: "+promedioEdades);
+    imprimir("fin");
+    
+
+</script>

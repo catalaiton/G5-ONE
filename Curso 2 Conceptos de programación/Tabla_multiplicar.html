@@ -1,0 +1,34 @@
+<meta charset="UTF-8">
+
+<h1>Tabla de multiplicar</h1>
+
+<script>
+
+    function saltarLinea(){
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase){
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var m=0;
+
+   for (i=0; i<=10; i++){
+        
+       imprimir("5 X "+m+" = "+5*m);
+        m++;
+    }
+
+    saltarLinea();
+    
+    var m2=0;
+    while(m2 <=10){
+        imprimir("5 X "+m2+" = " +5*m2);
+        m2++
+    }
+
+</script>
